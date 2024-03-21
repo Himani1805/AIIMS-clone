@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Tahoma;
+}    
+#root { 
+    width: 100vw;  
+    box-sizing: border-box;
+
+}
+#header{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    padding: 8px;
+    text-align: center;
+}
+#header div h6 a{
+    color: black;
+}
+
+#header div {
+    display: flex;
+
+
+}
+#header div a{
+    text-decoration: none;
+}
+#headerImg{
+    background-image: url("bg.img");
+    background-size: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 188px;
+    color: black;
+    padding: 0px 20px;
+
+    
+}
+#headerImg :nth-child(1){
+    width: fit-content;
+
+}
+#headerImg :nth-child(2){
+    width: fit-content;
+
+}
+#headerImg :nth-child(3){
+    width: fit-content;
+
+}
+
+#headerImg p{
+    color: #B54321;
+    font-size:x-large;
+}
+#headerImg li {
+    list-style-type: none;
+}
+#headerImg a{
+    text-decoration: none;
+    color: black;
+}
+#headerImg div {
+
+    width:60%;
+    
+}
+#navBar {
+    height: 40px;
+    display: flex;
+    background-color: #B54321;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+
+
+}
+#navBar div a {
+    text-decoration: none;
+    color: white;
+    
+
+}
+#navBar div li {
+    list-style-type: none;
+}
+#scroll {
+    width: 100%;
+    display: none;
+
+}
+#details {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px;
+  
+}
+#details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+#details div img {
+    border-radius: 50%;
+    border: 2px solid #B54321 ;
+    width: 128px;
+    background-color: #B54321;
+    padding: 5px;
+    margin: 20px;
+
+}
+#details div h4{
+    color: #B54321;
+
+}
+#healthDetails {
+    height: 800px;
+
+}
+#healthDiv{
+    display: flex;
+    border: 2px #B54321;
+
+
+}
+#healthDiv p {
+    color: #B54321;
+
+}
+#gallery {
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    /* padding: 50px; */
+    background-color: #F5F5F5;
+}
+#gallery div {
+    height: 250px;
+    /* padding: 4px; */
+    /* border: 1px solid gray; */
+
+}
+#gallery div p{
+    text-align: center;
+}
+#footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:#313131;
+    color: white;
+    padding: 20px;
+
+}
+#footer a,p{
+    font-size:small;
+
+}
+#footer h3, a, p{
+    color: white;
+    width: 300px;
+    height: 35px;
+
+}
+#footerMenu {
+    height: 400px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* width: 300px;
+    height: 35px; */
+    
+
+
+}
+#footerMenu div{
+    width: 300px;
+    height: 35px;
+
+    
+}
+#footerMenu div li{
+    list-style: none;
+    width: 300px;
+    height: 35px;
+    font-size:small;
+
+
+
+}
+#footerMenu div a {
+    text-decoration: none ;
+    width: 300px;
+    height: 35px;
+    font-size:small;
+
+
+    
+}
+#copyRight{
+    display: flex;
+    inline-size: none;
+}
