@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIIMS Clone</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="respnosive.css">
 </head>
 <body>
     <div id="root">
@@ -32,24 +33,24 @@
         </div>
         <hr>
         <div id="headerImg" >
-            <div>
-                <img src="https://www.aiims.edu/images/banners/aiims.png" alt="" width="200">
+            <div class="logo">
+                <img src="https://www.aiims.edu/images/banners/aiims.png" alt="" width="150"/>
             </div>
-            <div >
+            <div class="title">
                 <p>अखिल भारतीय आयुर्विज्ञान संस्थान, नई दिल्ली</p>
                 <p> All India Institute Of Medical Sciences, New Delhi</p>
             </div>
-            <div>
-                <div>
+            <div id="photos">
+                <div id="test">
                     <li><a href="OPD Appointments">OPD Appointments</a></li>
                     <li><a href="AIIMS Dashboard">AIIMS Dashboard</a></li>
                     <li><a href="ORBO Donar Pledge Form">ORBO Donar Pledge Form</a></li>
                     <li><a href="48th Convocation 2023---Photos">48th Convocation 2023---Photos</a></li>    
 
                 </div>
-                <div>
-                    <input type="text" placeholder="Search">
-                    <img src="https://www.aiims.edu/templates/zt_genius/images/search.png" alt="">
+                <div id="searchBar">
+                    <input type="text" placeholder="Search" width="50" />
+                    <img src="https://www.aiims.edu/templates/zt_genius/images/search.png" alt="" width="15" />
                 </div>
 
             </div>    
@@ -131,12 +132,18 @@
 
         </div>
         <div id="scroll">
-            <img src="https://www.aiims.edu/images/layerslider/genius/rslide4.jpg" alt="" width="">
-            <img src="https://www.aiims.edu/images/layerslider/genius/rslide1.jpg" alt="">
-            <img src="https://www.aiims.edu/images/layerslider/genius/rslide2.jpg" alt="">
-            <img src="https://www.aiims.edu/images/layerslider/genius/rslide6.jpg" alt="">
-            <img src="https://www.aiims.edu/images/layerslider/genius/rslide5.jpg" alt="">
-            <img src="https://www.aiims.edu/images/layerslider/genius/rslide3.jpg" alt="">
+            <img class ="mySlides" src="https://www.aiims.edu/images/layerslider/genius/rslide4.jpg" alt="" width=""/>
+            <img class ="mySlides" src="https://www.aiims.edu/images/layerslider/genius/rslide1.jpg" alt=""/>
+            <img class ="mySlides" src="https://www.aiims.edu/images/layerslider/genius/rslide2.jpg" alt=""/>
+            <img class ="mySlides" src="https://www.aiims.edu/images/layerslider/genius/rslide6.jpg" alt=""/>
+            <img class ="mySlides" src="https://www.aiims.edu/images/layerslider/genius/rslide5.jpg" alt=""/>
+            <img class ="mySlides" src="https://www.aiims.edu/images/layerslider/genius/rslide3.jpg" alt=""/>
+
+        </div>  
+        <div id="scrollButton">
+            <button class="button" onclick="minusDivs(-1)">&#10094;</button>
+            <button class="button" onclick="plusDivs(1)">&#10095;</button>
+        </div>           
 
         </div>
         <div id="details">
@@ -166,76 +173,134 @@
             </div>
 
         </div>
-        <div id="healthDetails">
+        <div id="main">
             <div id="healthDiv">
                 <div>
                     <p>
                         Minister of Health and Family Welfare 
                     </p>
                 </div>
+                <div id="members">
+                    <div>
+                        <img src="https://www.aiims.edu/images/pdf/HFM.jpg" alt="" width="125">
+                        <p>
+                            Dr. Mansukh Mandaviya                                
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://www.aiims.edu/images/pdf/moshm.jpg" alt="" width="125">
+                        <p>
+                            Prof. S. P. Singh Baghel
+                        </p>
+                        <p>
+                            Hon'ble Minister of State
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://www.aiims.edu/images/pdf/mos.jpg" alt="" width="125">
+                        <p>
+                            Dr. Bharati Pravin Pawar                             
+                        </p>
+                        <p>
+                            Hon'ble Minister of State
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://www.aiims.edu/images/pdf/director-221.jpg" alt="" width="125">
+                        <h4>Dr. M Srinivas</h4>
+                        <p>
+                            Director AIIMS
+                        </p>
+                    </div>  
+
+                </div>
+  
+            </div>
+            <div id="informationBlock">
+                <!-- <div id="information"> -->
+                    <div class="infoBlock">
+                        <div >
+                            <h5>What's New</h5>
+                            <!-- <img src="https://www.aiims.edu/media/com_zo2framework/images/glyphicons-halflings.png" alt="" width="20"> -->
+                            <p><a href="">AIIMS swachhata Wall</a></p>
+                            <p><a href="">AIIMS INITIATIVE INTO NBAL ACCREDIATION </a></p>
+                            <p><a href="">Telemedicine Practice Guidlines</a></p>
+                            <p><a href="">Frequently Asked Questions (FAQs) on Telemedicine Practice Guidlines</a></p>
+                            <p><a href="">NABL Certification Microbiology</a></p>
+                            <p><a href="">Mobile App for AIIMS Antibiotic Policy</a></p>
+                            <p><a href="">Online Application for Newly join Postgraduates</a></p>
+                            <p><a href="">Online Application for Undergradutes.</a></p>
+                            <p><a href="">Launch for the Healthy Apply Smile APP</a></p>
+                            <p><a href="">PRAKASHMAY Training</a></p>
+                            <p><a href="">Centre for Advance Research and Excellence in Neuromodulation (CARE) </a></p>
+                        </div>
+                    </div>
+            
+                    <div class="infoBlock">
+                        <div>
+                            <h5>INFORMATION RELATED TO COVID-19</h5>
+                            <p><a href="">Covid-19 in Children - Case Interactive Session by AIIMS,, New Delhi</a></p>
+                            <p><a href="">National Grand Rounds on COVID-19 on 27th January 2021(21/01/2021)</a></p>
+                            <p><a href="">National Grand Rounds on COVID-19 on 06th January 2021(02/01/2021)</a></p>
+                        </div>
+
+                    </div>
+                    <div class="infoBlock">
+                        <div>
+                            <h5>Pateint Care</h5>
+                            <p><a href="">Prevention of transmission of infection in a healthcare stting for 2019-nCoV</a></p>
+                            <p><a href="">OPD Appointment Booking on Telephone :011-26589142</a></p>
+                            <p><a href="">CONTROL ROOM-MSSO(Emergency)for information on availability of beds with ventilator in emergency on Telephone : 011-26596428</a></p><br>
+                            <p><a href="">Patient Portal</a></p>
+                            <p><a href="">Patient Appointment Dashboard</a></p>
+                            <p><a href="">National Poison Information Centre (24x7)</a></p>
+
+                        </div>
+                    </div>
+                <!-- </div>         -->
+
+            </div>
+            <div id="youtubeSection">
                 <div>
-                    <img src="https://www.aiims.edu/images/pdf/HFM.jpg" alt="" width="125">
-                    <p>
-                        Dr. Mansukh Mandaviya                                
-                    </p>
+                    <h5>AIIMS Channel</h5>
+                    <iframe width="720" height="420" src="https://www.youtube.com/embed/lk4ZfMNA4V8" title="AIIMS New Delhi : 67th Institute Day Celebration, 25th September 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 </div>
                 <div>
-                    <img src="https://www.aiims.edu/images/pdf/moshm.jpg" alt="" width="125">
-                    <p>
-                        Prof. S. P. Singh Baghel
-                    </p>
-                    <p>
-                        Hon'ble Minister of State
-                    </p>
-                </div>
-                <div>
-                    <img src="https://www.aiims.edu/images/pdf/mos.jpg" alt="" width="125">
-                    <p>
-                        Dr. Bharati Pravin Pawar                             
-                    </p>
-                    <p>
-                        Hon'ble Minister of State
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Director AIIMS
-                    </p>
-                    <img src="https://www.aiims.edu/images/pdf/director-221.jpg" alt="" width="125">
-                    <h4>Dr. M Srinivas</h4>
+                    <h5>Legacy of Excellence</h5>
+                    <iframe width="720" height="420" src="https://www.youtube.com/embed/lk4ZfMNA4V8" title="AIIMS New Delhi : 67th Institute Day Celebration, 25th September 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 </div>
 
             </div>
-            <div>
 
-
-            </div>
-            <div>
-
-            </div>
-             
         </div>
         <div id="gallery">
-            <p>Gallery</p> 
-            <div>
-                <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dsc5474.JPG" alt="">
-                <p>Institute Day</p>
+            <div id="galleryHeader">
+                <p>Gallery</p> 
             </div>
-            <div>
-                <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dsc-0052-ch-1.jpg" alt="">
-                <p>Importanat Visits/Events</p>
-            </div>
-            <div>
-                <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dscf0007.JPG" alt="">
-                <p>Vintage Photos</p>
-            </div>
-            <div>
-                <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_aiims-entrance.JPG" alt="">
-                <p>AIIMS at a Glance</p>
-            </div>
-            <div>
-                <img src="https://www.aiims.edu/images/com_fwgallery/files/863/mid_dsc-8897.JPG" alt="">
-                <p>AIIMS Swachatta</p>
+            <div id="galleryImage">
+                <div>
+                    <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dsc5474.JPG" alt="" >
+                    <p>Institute Day</p>
+                </div>
+                <div>
+                    <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dsc-0052-ch-1.jpg" alt="">
+                    <p>Importanat Visits/Events</p>
+                </div>
+                <div>
+                    <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_dscf0007.JPG" alt="">
+                    <p>Vintage Photos</p>
+                </div>
+                <div>
+                    <img src="https://www.aiims.edu/images/com_fwgallery/files/806/mid_aiims-entrance.JPG" alt="">
+                    <p>AIIMS at a Glance</p>
+                </div>
+                <div>
+                    <img src="https://www.aiims.edu/images/com_fwgallery/files/863/mid_dsc-8897.JPG" alt="">
+                    <p>AIIMS Swachatta</p>
+                </div>
+    
             </div>
 
         </div>
@@ -286,11 +351,11 @@
                 </div>    
                 
             </div>
-            <div id="CopyRight">
+            <div id="bottom">
                 <div>
                     <img src="https://www.aiims.edu/images/india_gov_in.png" alt="">
                 </div>
-                <div>
+                <div id="copyRight">
                     <p>
                         Copyright © AIIMS, New Delhi, All rights reserved.  
                     </p>
@@ -315,6 +380,30 @@
             <p>BCMath lib not installed. RSA encryption unavailable</p>
         </div>
     </div>
+
     
 </body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function minusDivs(n) {
+      showDivs(slideIndex -= n);
+    }
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
 </html>
